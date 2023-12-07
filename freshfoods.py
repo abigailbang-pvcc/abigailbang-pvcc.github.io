@@ -117,13 +117,13 @@ def display_results():
     print('WEEKLY PAYROLL REPORT ')
     print(tab + str(datetime.datetime.now()))
     print(line)
-    titles1 = "Emp Name" + tab + "Code" + tab + "Gross" + tab
-    titles2 = "Fed Inc Tax" + tab + "State Inc Tax" + tab + "Soc Sec" + tab + "Medicare" + tab + "Net"
+    titles1 = "Emp Name" + tab + "Code" + tab + "  Gross" + tab
+    titles2 = tab + "Fed Inc Tax" + tab + "State Inc Tax" + tab + "  Soc Sec" + tab + "  Medicare" + tab + "    Ret"
     print(titles1 + titles2)
 
     for i in range(num_emps):
-        datal = emp[i] + "  " + job[i]+ format(Lgross_pay[i], currency) + format(Lfed_tax[i], currency) + format(Lstate_tax[i], currency)
-        data2 = format(Lsoc_sec[i], currency) + format(Lmedicare[i], currency) + format(Lret[i], currency)
+        datal = emp[i] + "  " + job[i]+ tab + format(Lgross_pay[i], currency) + tab + format(Lfed_tax[i], currency) + tab + format(Lstate_tax[i], currency) + tab 
+        data2 = format(Lsoc_sec[i], currency) + tab + format(Lmedicare[i], currency) + tab + format(Lret[i], currency)
         print(datal + data2)
     print(line)
     print("********************** TOTAL GROSS: $" + format(total_gross, currency2))
