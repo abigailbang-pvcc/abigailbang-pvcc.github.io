@@ -46,7 +46,7 @@ def open_outfile():
     f = open(outfile, 'w')
     f.write('<html><head><title>Tuition</title>\n')
     f.write('<style> td{text-align: right} </style> </head>\n')
-    f.write('<body style ="background-color: #985b45; background-image: url(wp-cinema.png); color: #f8dd61;">\n')
+    f.write('<body style ="background-color: #d5e9e8; background-image: url(sea.png); color: #143d55;">\n')
 
 def get_user_data():
     global inout,numcredits, scholarshipamt
@@ -81,7 +81,7 @@ def create_output_file():
 
     #create output file
  
-    f.write('\n<table border="3" style ="background-color: #47161a; font-family: arial; margin: auto;">\n')
+    f.write('\n<table border="3" style ="background-color: #d5e9e8; font-family: arial; margin: auto;">\n')
     f.write(colsp + '\n')
     f.write('<h2>Piedmont Virginia Community College</h2></td></tr>')
     f.write(colsp + '\n')
